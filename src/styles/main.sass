@@ -1,0 +1,192 @@
+$mautim: #87509c //Tím 
+$maungoc: #17c2a4 // Cyan
+$mauvang: #ffdd99 // Vang 
+$maudo: #d74680 // Đỏ 
+$mauxanh: #3c5499 // Xanh 
+
+nav
+    background: #87509c
+    min-height: 100px
+    display: flex
+    align-items: center
+    text-align: center
+
+    .nav_menu
+        display: flex
+        ul
+            margin-left: auto
+        
+            li 
+                text-align: center
+                display: inline-block
+                width: 100px
+                border-radius: 5px
+                padding: 3px 0 6px 0
+
+                a
+                    color: yellow
+                    font-weight: bold
+                    font-size: 15px
+                    text-decoration: none
+                    letter-spacing: 1px
+                &:hover
+                    background: black
+
+.home_slider 
+    background: #87509c
+    min-height: 368px
+    display: flex
+    text-align: center
+    jstufy-contet: center
+    align-items: center
+    h1
+        color: white
+        font-size: 30px
+        letter-spacing: 2px
+    .btn-more
+        background: $mauvang
+        color: black
+        font-weight: bolder
+        font-size: 30px
+        box-shadow: 0px 5px #ffffff
+        &:hover
+            background: white
+            color: blue
+            
+h3
+    font-size: 30px
+    font-weight: bold
+    padding: 5srem .1rem
+
+p 
+    font-size: 15px
+
+=style($maunen: null, $mauchu: null)
+    text-align: center
+    background: $maunen 
+    color: $mauchu
+    padding: 2rem
+    min-height: 368px
+    letter-spacing: 1px
+    font-size: 20px
+    font-weight: bold
+    align-content: center
+    justify-content: center
+    display: flex
+
+    h2
+        font-size: 35px
+        font-weight: bolders
+        letter-spacing: 1px
+        position: relative
+        margin-bottom: 15px
+
+        &::before
+            content: ""
+            display: block
+            height: 3px
+            width: 80px
+            position: absolute
+            background: #000000
+            left: 50%
+            bottom: -10px
+            transform: translateX(-50%)
+            opacity: .5 
+
+.home_service
+    +style($maungoc, #ffffff)
+
+.home_team
+    +style(#777777, #fff)
+    
+    img 
+        max-width: 250px
+        padding: 20px 20px 
+        border-radius: 50%
+
+    img
+        transition: transform 0.3s ease-in-out
+
+        &:hover 
+            @extend .img-hover
+        
+    .img-hover 
+            transform: scale(1.10)
+            transition-duration: 0.5s
+
+    i 
+        display: inline-block
+        color: white
+        border-radius: 50%
+        background-color: black
+        font-size: 15px
+        text-align: center
+        width: 30px 
+        height: 30px 
+        line-height: 30px
+        margin: 5px
+        &:hover
+            background: blue
+            transition: esae-in-out .3s
+
+.home_skills
+    +style(#fff)
+
+    .skill_items    
+        p
+            font-weight: bolder
+        .pink
+            .bar
+                border-color: #d74680
+            .fill
+                border-color: #d74680
+
+.home_computer
+    +style($mauvang)
+       
+    .btn-more
+        background: #000000
+        color: white
+        min-width: 80px
+        margin-left: 5px
+        margin-bottom: 30px
+        &:hover
+            background: orange        
+
+    .img1 
+        width: 350px
+
+.home_about
+    +style($maudo)
+   
+    img 
+        max-width: 140px
+        border-radius: 50%  
+
+.home_touch
+    +style($mauxanh)
+
+    .btn-more
+        background: #000000
+        color: white
+        min-width: 80px
+        margin-left: 5px
+        margin-bottom: 30px
+        &:hover
+            background: orange   
+
+
+       
+
+
+
+
+
+
+
+       
+       
+
+    
+    
+
